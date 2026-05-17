@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Dhanush B — Mechanical Engineer, Web Developer & Aspiring Entrepreneur.">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Dhanush B — Engineer & Developer</title>
+</head>
+<body>
+   <!--==================== CUSTOM CURSOR ====================-->
+   <div class="cursor" id="cursor"></div>
+   <div class="cursor-follower" id="cursorFollower"></div>
+
+   <!--==================== PARTICLES BG ====================-->
+   <canvas id="particles"></canvas>
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Dhanush</a>
+         <div class="nav__menu" id="navMenu">
+            <ul class="nav__list">
+               <li><a href="#about" class="nav__link">About Us</a></li>
+               <li><a href="#projects" class="nav__link">Projects</a></li>
+               <li><a href="#contact" class="nav__link active-link">Contact</a></li>
+            </ul>
+            <div class="nav__close" id="navClose"><i class="ri-close-line"></i></div>
+         </div>
+         <div class="nav__toggle" id="navToggle"><i class="ri-menu-4-line"></i></div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container">
+            <div class="home__image">
+               <img src="assets\img\9d79a728-6181-40e2-909a-9e66038e961f.png" alt="Dhanush Balakrishnan" class="home__img">
+               <div class="home__ring"></div>
+               <div class="home__blob"></div>
+            </div>
+
+            <div class="home__data">
+               <p class="home__greeting">Hello, I'm</p>
+               <h1 class="home__name">Dhanush Balakrishnan</h1>
+               <p class="home__subtitle">And I'm a <span class="home__highlight" id="roleText"></span><span class="home__cursor">|</span></p>
+               <p class="home__description">
+                  Mechanical Engineer & Developer passionate about building innovative solutions.
+                  Associate Engineer at KPIT and Founder of AgriBot — an agricultural automation startup.
+               </p>
+
+               <div class="home__social">
+                  <a href="https://in.linkedin.com/in/dhanush-balakrishnan-398487225 target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                  <a href="https://github.com/Dhanush102003" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+                  <a href="mailto:dhanush.b1102003@gmail.com" class="home__social-link"><i class="ri-mail-fill"></i></a>
+                  <a href="tel:+919003923072" class="home__social-link"><i class="ri-phone-fill"></i></a>
+               </div>
+
+               <div style="display:flex;gap:1rem;justify-content:center;">
+                  <a href="resume.html" class="button home__button">
+                     View Resume <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <a href="#work" id="educationBtn" class="button home__button" style="background:transparent;border:1px solid var(--first-color);color:var(--text-color);">
+                     Education Details <i class="ri-graduation-cap-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__stats">
+               <div class="home__stat">
+                  <h3 class="home__stat-number">5+</h3>
+                  <p class="home__stat-label">Projects<br>Completed</p>
+               </div>
+               <div class="home__stat">
+                  <h3 class="home__stat-number">8.45</h3>
+                  <p class="home__stat-label">CGPA<br>Engineering</p>
+               </div>
+               <div class="home__stat">
+                  <h3 class="home__stat-number">5+</h3>
+                  <p class="home__stat-label">Certifications<br>Earned</p>
+               </div>
+               <div class="home__stat">
+                  <h3 class="home__stat-number">3+</h3>
+                  <p class="home__stat-label">Work<br>Experiences</p>
+               </div>
+            </div>
+         </div>
+         <div class="home__shape home__shape-1"></div>
+         <div class="home__shape home__shape-2"></div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">
+                  <span>Innovation</span> <br> Is My Passion
+               </h2>
+               <p class="about__description">
+                  I'm a <b>Mechanical Engineer & Developer</b> passionate 
+                  about building things that matter — from <b>3D CAD models</b> and 
+                  <b>FEA simulations</b> to <b>responsive web applications</b>. 
+                  Currently an Associate Engineer at KPIT and building 
+                  <b>AgriBot</b> — my agricultural automation startup. 
+                  Driven by curiosity and the desire to innovate.
+               </p>
+               <a href="resume.html" class="button">
+                  Resume <i class="ri-arrow-right-up-line"></i>
+               </a>
+            </div>
+            <div class="about__image">
+               <img src="assets/img/Dhanush..jpeg" alt="Dhanush B" class="about__img">
+               <div class="about__shadow"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS (Flowing cards with images) ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title">I Build Incredible <br> <span>Projects</span></h2>
+
+         <div class="projects__wrapper">
+            <div class="projects__track" id="projectsTrack">
+               <!-- Card 1 -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper">
+                     <img src="assets/img/project-asiamart.png" alt="Asia Mart" class="projects__img">
+                  </div>
+                  <div class="projects__content">
+                     <span class="projects__number">01</span>
+                     <h3 class="projects__category">Web</h3>
+                     <h2 class="projects__title">Asia Mart — Grocery Website</h2>
+                     <p class="projects__description">Responsive grocery site with AI recipe & nutrition API integration, real-time cart, and user login.</p>
+                     <div class="projects__tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+                     </div>
+                  </div>
+               </article>
+               <!-- Card 2 -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper">
+                     <img src="assets/img/project-paintsprayer.png" alt="Paint Sprayer" class="projects__img">
+                  </div>
+                  <div class="projects__content">
+                     <span class="projects__number">02</span>
+                     <h3 class="projects__category">Engineering</h3>
+                     <h2 class="projects__title">Smart Vacuum Paint Sprayer</h2>
+                     <p class="projects__description">Multifunctional device with vacuum, blower & sensor-based paint sprayer. FEA optimized with GenAI predictions.</p>
+                     <div class="projects__tags">
+                        <span>SolidWorks</span><span>FEA</span><span>GenAI</span>
+                     </div>
+                  </div>
+               </article>
+               <!-- Card 3 -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper">
+                     <img src="assets/img/project-agribot.png" alt="AgriBot" class="projects__img">
+                  </div>
+                  <div class="projects__content">
+                     <span class="projects__number">03</span>
+                     <h3 class="projects__category">Startup</h3>
+                     <h2 class="projects__title">AgriBot — Smart Farming</h2>
+                     <p class="projects__description">Agricultural automation startup website. Building IoT-powered tools to revolutionize modern farming.</p>
+                     <div class="projects__tags">
+                        <span>HTML</span><span>CSS</span><span>GSAP</span><span>IoT</span>
+                     </div>
+                  </div>
+               </article>
+               <!-- Card 4 -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper">
+                     <img src="assets/img/project-chassis.png" alt="Chassis Analysis" class="projects__img">
+                  </div>
+                  <div class="projects__content">
+                     <span class="projects__number">04</span>
+                     <h3 class="projects__category">CAE</h3>
+                     <h2 class="projects__title">Chassis Impact Analysis</h2>
+                     <p class="projects__description">FEA simulations assessing structural integrity under front & rear impact. Identified critical stress areas.</p>
+                     <div class="projects__tags">
+                        <span>ANSYS</span><span>FEA</span><span>Safety</span>
+                     </div>
+                  </div>
+               </article>
+               <!-- Card 5 -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper">
+                     <img src="assets/img/project-headlight.png" alt="Headlight Control" class="projects__img">
+                  </div>
+                  <div class="projects__content">
+                     <span class="projects__number">05</span>
+                     <h3 class="projects__category">IoT</h3>
+                     <h2 class="projects__title">Auto Headlight Control</h2>
+                     <p class="projects__description">Smart system that automatically dims headlights using sensors to reduce glare for oncoming traffic.</p>
+                     <div class="projects__tags">
+                        <span>Sensors</span><span>Embedded</span><span>Automotive</span>
+                     </div>
+                  </div>
+               </article>
+               <!-- Duplicates for infinite scroll -->
+               <article class="projects__card">
+                  <div class="projects__img-wrapper"><img src="assets/img/project-asiamart.png" alt="Asia Mart" class="projects__img"></div>
+                  <div class="projects__content">
+                     <span class="projects__number">01</span>
+                     <h3 class="projects__category">Web</h3>
+                     <h2 class="projects__title">Asia Mart — Grocery Website</h2>
+                     <p class="projects__description">Responsive grocery site with AI recipe & nutrition API integration, real-time cart, and user login.</p>
+                     <div class="projects__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+                  </div>
+               </article>
+               <article class="projects__card">
+                  <div class="projects__img-wrapper"><img src="assets/img/project-paintsprayer.png" alt="Paint Sprayer" class="projects__img"></div>
+                  <div class="projects__content">
+                     <span class="projects__number">02</span>
+                     <h3 class="projects__category">Engineering</h3>
+                     <h2 class="projects__title">Smart Vacuum Paint Sprayer</h2>
+                     <p class="projects__description">Multifunctional device with vacuum, blower & sensor-based paint sprayer. FEA optimized with GenAI predictions.</p>
+                     <div class="projects__tags"><span>SolidWorks</span><span>FEA</span><span>GenAI</span></div>
+                  </div>
+               </article>
+               <article class="projects__card">
+                  <div class="projects__img-wrapper"><img src="assets/img/project-agribot.png" alt="AgriBot" class="projects__img"></div>
+                  <div class="projects__content">
+                     <span class="projects__number">03</span>
+                     <h3 class="projects__category">Startup</h3>
+                     <h2 class="projects__title">AgriBot — Smart Farming</h2>
+                     <p class="projects__description">Agricultural automation startup website. Building IoT-powered tools to revolutionize modern farming.</p>
+                     <div class="projects__tags"><span>HTML</span><span>CSS</span><span>GSAP</span><span>IoT</span></div>
+                  </div>
+               </article>
+               <article class="projects__card">
+                  <div class="projects__img-wrapper"><img src="assets/img/project-chassis.png" alt="Chassis Analysis" class="projects__img"></div>
+                  <div class="projects__content">
+                     <span class="projects__number">04</span>
+                     <h3 class="projects__category">CAE</h3>
+                     <h2 class="projects__title">Chassis Impact Analysis</h2>
+                     <p class="projects__description">FEA simulations assessing structural integrity under front & rear impact. Identified critical stress areas.</p>
+                     <div class="projects__tags"><span>ANSYS</span><span>FEA</span><span>Safety</span></div>
+                  </div>
+               </article>
+               <article class="projects__card">
+                  <div class="projects__img-wrapper"><img src="assets/img/project-headlight.png" alt="Headlight Control" class="projects__img"></div>
+                  <div class="projects__content">
+                     <span class="projects__number">05</span>
+                     <h3 class="projects__category">IoT</h3>
+                     <h2 class="projects__title">Auto Headlight Control</h2>
+                     <p class="projects__description">Smart system that automatically dims headlights using sensors to reduce glare for oncoming traffic.</p>
+                     <div class="projects__tags"><span>Sensors</span><span>Embedded</span><span>Automotive</span></div>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== WORK ====================-->
+      <section class="work section" id="work">
+         <h2 class="section__title"><span>My Work</span> <br> Experience</h2>
+         <div class="work__container container">
+            <div class="work__tabs">
+               <button class="work__button active-tab" data-tab="experience">Experience <i class="ri-briefcase-line"></i></button>
+               <button class="work__button" data-tab="education">Education <i class="ri-graduation-cap-line"></i></button>
+            </div>
+            <div class="work__content active-content" id="experience">
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Founder <br> & Visionary</h3><p class="work__subtitle">AgriBot (Startup)</p></div>
+                  <div class="work__year"><p>Building</p></div>
+                  <div class="work__description"><p>Building an agricultural automation startup focused on smart farming solutions with IoT-powered tools.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Associate <br> Engineer</h3><p class="work__subtitle">KPIT Technologies</p></div>
+                  <div class="work__year"><p>Current</p></div>
+                  <div class="work__description"><p>Designing 3D CAD models, structural analysis using ANSYS, design support for hydraulic systems and sheet metal parts.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Graduate <br> Engineer</h3><p class="work__subtitle">Caresoft Global</p></div>
+                  <div class="work__year"><p>2025</p></div>
+                  <div class="work__description"><p>FEA and structural validation, 3D CAD with Siemens NX, tractor linkage design calculations.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Web Dev <br> Intern</h3><p class="work__subtitle">Coders Cave</p></div>
+                  <div class="work__year"><p>2024</p></div>
+                  <div class="work__description"><p>Built weather dashboards using APIs, designed portfolio with HTML, CSS, JavaScript.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Gen AI <br> Intern</h3><p class="work__subtitle">Skillible</p></div>
+                  <div class="work__year"><p>2024</p></div>
+                  <div class="work__description"><p>Prompt engineering, AI outputs evaluation, generative AI strengths and limitations.</p></div>
+               </div>
+            </div>
+            <div class="work__content" id="education">
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Bachelor of <br> Engineering</h3><p class="work__subtitle">SNS College of Engineering</p></div>
+                  <div class="work__year"><p>2021–2025</p></div>
+                  <div class="work__description"><p>Mechanical Engineering — 8.40 CGPA. CAD, FEA, thermodynamics, design engineering.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Higher <br> Secondary</h3><p class="work__subtitle">HSC — 86%</p></div>
+                  <div class="work__year"><p>2019–2021</p></div>
+                  <div class="work__description"><p>Strong performance in Mathematics, Physics, and Computer Science.</p></div>
+               </div>
+               <div class="work__data">
+                  <div class="work__info"><h3 class="work__title">Secondary <br> School</h3><p class="work__subtitle">SSLC — 84%</p></div>
+                  <div class="work__year"><p>2018–2019</p></div>
+                  <div class="work__description"><p>Completed secondary school with excellent grades.</p></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title">What I <span>Offer</span></h2>
+         <div class="services__container container">
+            <div class="services__card">
+               <div class="services__header"><h3 class="services__title">Developer</h3><i class="ri-arrow-down-s-line services__icon"></i></div>
+               <div class="services__content">
+                  <p class="services__description">Website creation with HTML, CSS, JavaScript. Building responsive web applications, API integrations, and AI-powered solutions.</p>
+                  <h4 class="services__subtitle">Skills & Tools</h4>
+                  <p class="services__skills">HTML5 — CSS3 — JavaScript — Bootstrap — Python — MySQL — ML — Git</p>
+               </div>
+            </div>
+            <div class="services__card">
+               <div class="services__header"><h3 class="services__title">Engineer</h3><i class="ri-arrow-down-s-line services__icon"></i></div>
+               <div class="services__content">
+                  <p class="services__description">Mechanical design and analysis with industry-standard CAD/CAE tools. FEA simulations, structural validation, product development.</p>
+                  <h4 class="services__subtitle">Skills & Tools</h4>
+                  <p class="services__skills">SolidWorks — Siemens NX — ANSYS — Fusion 360 — FEA — 3D Modeling</p>
+               </div>
+            </div>
+            <div class="services__card">
+               <div class="services__header"><h3 class="services__title">Designer</h3><i class="ri-arrow-down-s-line services__icon"></i></div>
+               <div class="services__content">
+                  <p class="services__description">UI/UX design with Figma, data visualization with Power BI, creative problem-solving and user-centered design.</p>
+                  <h4 class="services__subtitle">Skills & Tools</h4>
+                  <p class="services__skills">Figma — Power BI — Excel — UI/UX — Data Visualization — Design Thinking</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CERTIFICATIONS ====================-->
+      <section class="certifications section" id="certifications">
+         <h2 class="section__title"><span>Certifications</span> <br> & Achievements</h2>
+         <div class="certifications__container container">
+            <div class="certifications__scroll" id="certScroll">
+               <div class="certifications__card"><i class="ri-award-fill certifications__icon"></i><h3>CSWA</h3><p class="certifications__issuer">Dassault Systemes</p></div>
+               <div class="certifications__card"><i class="ri-brain-line certifications__icon"></i><h3>Python & ML</h3><p class="certifications__issuer">PrepInsta</p></div>
+               <div class="certifications__card"><i class="ri-lightbulb-flash-line certifications__icon"></i><h3>Design Thinking</h3><p class="certifications__issuer">IBM</p></div>
+               <div class="certifications__card"><i class="ri-robot-2-line certifications__icon"></i><h3>Robotics</h3><p class="certifications__issuer">NIT Workshop</p></div>
+               <div class="certifications__card certifications__achievement"><i class="ri-trophy-fill certifications__icon"></i><h3>1st Runner-up</h3><p class="certifications__issuer">Naan Mudhalvan — Fusion 360</p></div>
+               <div class="certifications__card"><i class="ri-award-fill certifications__icon"></i><h3>CSWA</h3><p class="certifications__issuer">Dassault Systemes</p></div>
+               <div class="certifications__card"><i class="ri-brain-line certifications__icon"></i><h3>Python & ML</h3><p class="certifications__issuer">PrepInsta</p></div>
+               <div class="certifications__card"><i class="ri-lightbulb-flash-line certifications__icon"></i><h3>Design Thinking</h3><p class="certifications__issuer">IBM</p></div>
+               <div class="certifications__card"><i class="ri-robot-2-line certifications__icon"></i><h3>Robotics</h3><p class="certifications__issuer">NIT Workshop</p></div>
+               <div class="certifications__card certifications__achievement"><i class="ri-trophy-fill certifications__icon"></i><h3>1st Runner-up</h3><p class="certifications__issuer">Naan Mudhalvan — Fusion 360</p></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">Contact Me</h2>
+         <div class="contact__container container">
+            <p class="contact__description">Tell me about your next project.</p>
+            <div class="contact__copy">
+               <button class="contact__button" id="copyEmail"><i class="ri-file-copy-line"></i> Copy email</button>
+               <span class="contact__copied" id="copiedMsg">Copied!</span>
+            </div>
+            <div class="contact__grid">
+               <div class="contact__card"><h3 class="contact__card-title">Email</h3><a href="mailto:dhanush.b1102003@gmail.com" class="contact__card-info">dhanush.b1102003@gmail.com</a></div>
+               <div class="contact__card"><h3 class="contact__card-title">Location</h3><p class="contact__card-info">Coimbatore, Tamil Nadu</p></div>
+               <div class="contact__card"><h3 class="contact__card-title">Social Media</h3><div class="contact__links"><a href="https://in.linkedin.com/in/dhanush-balakrishnan-398487225" target="_blank">Linkedin</a> — <a href="https://github.com/Dhanush102003" target="_blank">GitHub</a></div></div>
+               <div class="contact__card"><h3 class="contact__card-title">Write Me & We'll Talk</h3><div class="contact__links"><a href="https://api.whatsapp.com/send?phone=919003923072&text=Hello!" target="_blank">WhatsApp</a> — <a href="https://www.instagram.com/" target="_blank">Instagram</a></div></div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <span class="footer__copy">All Rights Reserved By <span>Dhanush B</span></span>
+      <span class="footer__year">&copy; 2026</span>
+   </footer>
+
+   <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
